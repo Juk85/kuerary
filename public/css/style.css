@@ -153,7 +153,7 @@ body .menu .titulo img {
 }
 @media screen and (max-width: 375px) {
   body .menu .titulo img {
-    width: 200px;
+    width: 180px;
   }
 }
 body .inicio {
@@ -188,6 +188,7 @@ body .inicio .cont-1 h1 {
   margin: auto;
   bottom: 0;
   margin-bottom: 50px;
+  font-family: "Didot";
 }
 @media screen and (max-width: 375px) {
   body .inicio .cont-1 h1 {
@@ -328,6 +329,11 @@ body .descripcion .cont-3 .conoce-personas {
     width: 100%;
   }
 }
+@media screen and (max-width: 375px) {
+  body .descripcion .cont-3 .conoce-personas {
+    padding-top: 40px;
+  }
+}
 body .descripcion .cont-3 .imagen-iphone {
   width: 25%;
   left: 0;
@@ -384,6 +390,12 @@ body .confidencial .cont-4 {
     top: 170px;
   }
 }
+@media screen and (max-width: 375px) {
+  body .confidencial .cont-4 {
+    width: 100%;
+    top: 0;
+  }
+}
 body .confidencial .cont-4 .reg-forma-segura {
   width: 70%;
   left: 0;
@@ -410,8 +422,26 @@ body .confidencial .cont-4 .img-reg-conf {
     width: 50%;
   }
 }
+@media screen and (max-width: 375px) {
+  body .confidencial .cont-4 .img-reg-conf {
+    width: 100%;
+  }
+}
 body .confidencial .cont-4 .img-reg-conf img {
   width: 250px;
+  display: block;
+}
+@media screen and (max-width: 375px) {
+  body .confidencial .cont-4 .img-reg-conf img {
+    width: 100%;
+    padding-top: 30px;
+    width: 47%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
 }
 body .eventos {
   left: 0;
@@ -450,6 +480,11 @@ body .eventos .cont-5 .interactua {
 @media screen and (max-width: 768px) {
   body .eventos .cont-5 .interactua {
     width: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .eventos .cont-5 .interactua {
+    padding-top: 100px;
   }
 }
 body .eventos .cont-5 .img-interactua {
@@ -533,8 +568,25 @@ body .aplicacion .cont-6 .img-app {
   bottom: 0;
   margin: auto;
 }
+@media screen and (max-width: 375px) {
+  body .aplicacion .cont-6 .img-app {
+    width: 100%;
+  }
+}
 body .aplicacion .cont-6 .img-app img {
   width: 240px;
+}
+@media screen and (max-width: 375px) {
+  body .aplicacion .cont-6 .img-app img {
+    width: 65%;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding-top: 40px;
+  }
 }
 body .preg-fre .cont-7 {
   position: absolute;
@@ -577,6 +629,11 @@ body .preg-fre .cont-7 .img-preg {
     width: 50%;
   }
 }
+@media screen and (max-width: 375px) {
+  body .preg-fre .cont-7 .img-preg {
+    width: 100%;
+  }
+}
 body .preg-fre .cont-7 .img-preg img {
   width: 370px;
   left: 0;
@@ -585,6 +642,11 @@ body .preg-fre .cont-7 .img-preg img {
   bottom: 0;
   margin: auto;
   display: block;
+}
+@media screen and (max-width: 375px) {
+  body .preg-fre .cont-7 .img-preg img {
+    width: 100%;
+  }
 }
 body .contacto {
   background-image: url("../img/fondo-registro.png");
@@ -608,6 +670,11 @@ body .contacto .cont-8 {
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
 }
+@media screen and (max-width: 375px) {
+  body .contacto .cont-8 {
+    width: 80%;
+  }
+}
 body .contacto .cont-8 .formulario {
   width: 80%;
   height: auto;
@@ -617,11 +684,23 @@ body .contacto .cont-8 .formulario {
   bottom: 0;
   margin: auto;
 }
+@media screen and (max-width: 735px) {
+  body .contacto .cont-8 .formulario {
+    width: 100%;
+  }
+}
 body .contacto .cont-8 .formulario h1 {
   font-size: 50px;
   color: #fff;
   font-family: didot;
   margin-bottom: 20px;
+  font-family: "Didot";
+}
+@media screen and (max-width: 375px) {
+  body .contacto .cont-8 .formulario h1 {
+    font-size: 30px;
+    text-align: center;
+  }
 }
 body .contacto .cont-8 .formulario input {
   width: 90%;
@@ -643,7 +722,7 @@ body .contacto .cont-8 .formulario a {
   margin: 15px auto;
   padding: 9px;
   display: block;
-  font-family: Didot;
+  font-family: "Didot";
   margin-top: 50px;
 }
 body .contacto .cont-8 .formulario #dat-obli {

@@ -169,6 +169,7 @@ body {
   				margin: auto;
   				bottom: 0;
   				margin-bottom: 50px;
+                font-family: "Didot";                    
                 @media screen and (max-width: 375px){
                     font-size: 40px;
                     margin-bottom: 0px;
@@ -288,6 +289,9 @@ body {
                 @media screen and (max-width: 768px){
                     width: 100%;
                 }
+                @media screen and (max-width: 375px){
+                    padding-top: 40px;
+                }
             }
             .imagen-iphone{
                 width: 25%;
@@ -338,7 +342,11 @@ body {
             justify-content: space-around;
             @media screen and (max-width: 768px){
                 top: 170px;
-            }            
+            }
+            @media screen and (max-width: 375px){
+                width: 100%; 
+                top: 0;
+            }           
             .reg-forma-segura {
                 width: 70%;
                 left: 0;
@@ -357,11 +365,25 @@ body {
                 top: 0;
                 bottom: 0;
                 margin: auto;
-                 @media screen and (max-width: 768px){
+                @media screen and (max-width: 768px){
                     width: 50%;
-                }
+                    }
+                @media screen and (max-width: 375px){
+                    width: 100%;
+                    } 
                 img {
                     width: 250px;
+                    display: block;
+                    @media screen and (max-width: 375px){
+                        width: 100%;
+                        padding-top: 30px;
+                        width: 47%;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                    }  
                 }
             }
         }   
@@ -394,6 +416,9 @@ body {
                 margin: auto;
                 @media screen and (max-width: 768px){
                     width: 100%;
+                }
+                @media screen and (max-width: 375px){
+                    padding-top: 100px;
                 }
             }
             .img-interactua {
@@ -470,8 +495,21 @@ body {
                 top: 0;
                 bottom: 0;
                 margin: auto;
+                @media screen and (max-width: 375px){
+                    width: 100%;
+                }
                 img {
                     width: 240px;
+                    @media screen and (max-width: 375px){
+                          width: 65%;
+                        display: block;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        padding-top: 40px;
+                    }
                 }
             }
         }
@@ -509,8 +547,11 @@ body {
                 bottom: 0;
                 margin: auto;
                 display: block;
-                 @media screen and (max-width: 768px){
+                @media screen and (max-width: 768px){
                     width: 50%;
+                }
+                @media screen and (max-width: 375px){
+                    width: 100%;
                 }
                 img {
                      width: 370px;
@@ -520,6 +561,9 @@ body {
                     bottom: 0;
                     margin: auto;
                     display: block;
+                    @media screen and (max-width: 375px){
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -544,6 +588,9 @@ body {
             display: flex;
             -webkit-flex-flow: row wrap;
             justify-content: space-around;
+            @media screen and (max-width: 375px){
+                width: 80%;
+            }
             .formulario {
                 width: 80%;
                 height: auto;
@@ -552,12 +599,20 @@ body {
                 top: 0;
                 bottom: 0;
                 margin: auto;
+                @media screen and (max-width: 735px){
+                    width 100%;
+                }
                 h1 {
                 font-size: 50px;
                 color: #fff;
                 font-family: didot;
                 margin-bottom: 20px;
-                } 
+                font-family: "Didot"; 
+                @media screen and (max-width: 375px){
+                    font-size: 30px;
+                    text-align: center;
+                    }
+                }    
                 input {
                     width: 90%;
                     height: 10%;
@@ -578,7 +633,7 @@ body {
                     margin: 15px auto;
                     padding: 9px;
                     display: block;
-                    font-family: Didot;
+                    font-family: "Didot"; 
                     margin-top: 50px;
                 }
                 #dat-obli{
