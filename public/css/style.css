@@ -1,0 +1,654 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Didot";
+}
+body section {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: relative;
+}
+body section p {
+  font-family: "Didot";
+  font-size: 25px;
+  color: #fff;
+  text-align: left;
+  line-height: 30px;
+}
+@media screen and (max-width: 768px) {
+  body section p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  body section p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+body section span {
+  color: #edc463;
+}
+body .menu-desplegado {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #141414;
+  z-index: 2;
+  background-image: url("../img/fondo-menu.png");
+  background-size: cover;
+  display: none;
+  z-index: 4;
+}
+body .menu-desplegado .cerrar {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/close.png");
+  background-size: cover;
+  margin-left: 92%;
+  margin-top: 15px;
+}
+body .menu-desplegado ul {
+  width: 44%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  list-style: none;
+  padding-top: 25px;
+}
+@media screen and (max-width: 1024px) {
+  body .menu-desplegado ul {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  body .menu-desplegado ul {
+    height: 77%;
+    position: absolute;
+  }
+}
+body .menu-desplegado ul a {
+  text-decoration: none;
+}
+body .menu-desplegado ul li {
+  font-family: 'Italiana', serif;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  line-height: 60px;
+  letter-spacing: 3px;
+}
+body .menu {
+  width: 90%;
+  height: 110px;
+  border-bottom: 1px solid #fff;
+  margin: auto;
+  list-style: none;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+body .menu .fondo-inicio-cel {
+  width: 100%;
+  height: 100%;
+}
+body .menu .menu-icono {
+  width: 45px;
+  height: 45px;
+  background-image: url("../img/menu.png");
+  background-size: cover;
+  margin-top: 35px;
+  display: block;
+}
+@media screen and (max-width: 375px) {
+  body .menu .menu-icono {
+    width: 35px;
+    height: 35px;
+  }
+}
+body .menu .titulo {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
+  width: 50%;
+}
+@media screen and (max-width: 375px) {
+  body .menu .titulo {
+    width: 85%;
+  }
+}
+body .menu .titulo img {
+  width: 250px;
+  padding: 10px;
+}
+@media screen and (max-width: 1024px) {
+  body .menu .titulo img {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .menu .titulo img {
+    width: 200px;
+  }
+}
+body .inicio {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/fondo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+body .inicio .cont-1 {
+  position: absolute;
+  width: 80%;
+  height: 40%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+body .inicio .cont-1 h1 {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  font-size: 60px;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  bottom: 0;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 375px) {
+  body .inicio .cont-1 h1 {
+    font-size: 40px;
+    margin-bottom: 0px;
+  }
+}
+body .inicio .cont-1 .kue-imagen {
+  display: block;
+  width: 500px;
+  height: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  body .inicio .cont-1 .kue-imagen {
+    padding-top: 100px;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .inicio .cont-1 .kue-imagen {
+    padding-top: 70px;
+  }
+}
+body .quienes-somos .cont-2 {
+  position: absolute;
+  width: 80%;
+  height: 48%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+body .quienes-somos .cont-2 .tex-que-es-kuerary {
+  width: 50%;
+  height: 50%;
+  padding-top: 3%;
+}
+@media screen and (max-width: 768px) {
+  body .quienes-somos .cont-2 .tex-que-es-kuerary {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .quienes-somos .cont-2 .tex-que-es-kuerary {
+    width: 100%;
+  }
+}
+body .quienes-somos .cont-2 .img-que-es-kuerary {
+  width: 50%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  body .quienes-somos .cont-2 .img-que-es-kuerary {
+    width: 100%;
+    padding-top: 70px;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .quienes-somos .cont-2 .img-que-es-kuerary {
+    width: 100%;
+    height: 100%;
+  }
+}
+body .quienes-somos .cont-2 .img-que-es-kuerary img {
+  width: 600px;
+  height: 400px;
+  display: block;
+}
+@media screen and (max-width: 1024px) {
+  body .quienes-somos .cont-2 .img-que-es-kuerary img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .quienes-somos .cont-2 .img-que-es-kuerary img {
+    width: 300px;
+    height: 200px;
+    padding-top: 20px;
+  }
+}
+body .descripcion .cont-3 {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  top: 100px;
+}
+@media screen and (max-width: 768px) {
+  body .descripcion .cont-3 {
+    top: 170px;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .descripcion .cont-3 {
+    top: 40px;
+  }
+}
+body .descripcion .cont-3 .conoce-personas {
+  width: 70%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  body .descripcion .cont-3 .conoce-personas {
+    width: 100%;
+  }
+}
+body .descripcion .cont-3 .imagen-iphone {
+  width: 25%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  body .descripcion .cont-3 .imagen-iphone {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .descripcion .cont-3 .imagen-iphone {
+    width: 100%;
+  }
+}
+body .descripcion .cont-3 .imagen-iphone img {
+  width: 250px;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+@media screen and (max-width: 375px) {
+  body .descripcion .cont-3 .imagen-iphone img {
+    width: 65%;
+    padding-top: 40px;
+  }
+}
+body .confidencial .cont-4 {
+  position: absolute;
+  width: 70%;
+  height: 50%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+  body .confidencial .cont-4 {
+    top: 170px;
+  }
+}
+body .confidencial .cont-4 .reg-forma-segura {
+  width: 70%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  body .confidencial .cont-4 .reg-forma-segura {
+    width: 100%;
+  }
+}
+body .confidencial .cont-4 .img-reg-conf {
+  width: 25%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  body .confidencial .cont-4 .img-reg-conf {
+    width: 50%;
+  }
+}
+body .confidencial .cont-4 .img-reg-conf img {
+  width: 250px;
+}
+body .eventos {
+  left: 0;
+  right: 0;
+  top: 0;
+}
+body .eventos .cont-5 {
+  position: absolute;
+  width: 80%;
+  height: 70%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+@media screen and (max-width: 1024px) {
+  body .eventos .cont-5 {
+    height: 100%;
+  }
+}
+body .eventos .cont-5 .interactua {
+  width: 60%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  body .eventos .cont-5 .interactua {
+    width: 100%;
+  }
+}
+body .eventos .cont-5 .img-interactua {
+  width: 40%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  body .eventos .cont-5 .img-interactua {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .eventos .cont-5 .img-interactua {
+    width: 100%;
+  }
+}
+body .eventos .cont-5 .img-interactua img {
+  width: 500px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
+}
+@media screen and (max-width: 1024px) {
+  body .eventos .cont-5 .img-interactua img {
+    width: 430px;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .eventos .cont-5 .img-interactua img {
+    width: 330px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+  }
+}
+body .aplicacion .cont-6 {
+  position: absolute;
+  width: 70%;
+  height: 50%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+nd
+  top: 100px;
+}
+body .aplicacion .cont-6 .desc-app {
+  width: 60%;
+  bottom: 0;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  body .aplicacion .cont-6 .desc-app {
+    width: 100%;
+  }
+}
+body .aplicacion .cont-6 .img-app {
+  width: 23%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+body .aplicacion .cont-6 .img-app img {
+  width: 240px;
+}
+body .preg-fre .cont-7 {
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+body .preg-fre .cont-7 .tex-preg-frec {
+  width: 60%;
+}
+@media screen and (max-width: 768px) {
+  body .preg-fre .cont-7 .tex-preg-frec {
+    width: 100%;
+  }
+}
+body .preg-fre .cont-7 .img-preg {
+  width: 40%;
+  height: 50%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  body .preg-fre .cont-7 .img-preg {
+    width: 50%;
+  }
+}
+body .preg-fre .cont-7 .img-preg img {
+  width: 370px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: block;
+}
+body .contacto {
+  background-image: url("../img/fondo-registro.png");
+  background-size: cover;
+}
+body .contacto .cont-8 {
+  position: absolute;
+  width: 50%;
+  height: 70%;
+  left: 0;
+  right: 0;
+  top: 0px;
+  bottom: 0;
+  margin: auto;
+  margin: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+body .contacto .cont-8 .formulario {
+  width: 80%;
+  height: auto;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+body .contacto .cont-8 .formulario h1 {
+  font-size: 50px;
+  color: #fff;
+  font-family: didot;
+  margin-bottom: 20px;
+}
+body .contacto .cont-8 .formulario input {
+  width: 90%;
+  height: 10%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 16px;
+}
+body .contacto .cont-8 .formulario a {
+  width: 100px;
+  background-color: #d0d0d0;
+  height: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  font-size: 19px;
+  margin: 15px auto;
+  padding: 9px;
+  display: block;
+  font-family: Didot;
+  margin-top: 50px;
+}
+body .contacto .cont-8 .formulario #dat-obli {
+  font-family: Didot;
+  text-align: center;
+  font-size: 24px;
+  display: none;
+}
