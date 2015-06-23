@@ -17,7 +17,7 @@ body {
         position: relative;
             p {
                 font-family: "Didot";
-                font-size: 25px;
+                font-size: 27px;
                 color: #FFF;    
                 text-align: left;
                 line-height: 30px;
@@ -30,63 +30,83 @@ body {
                 }      
             }
             span {
-                    color: #edc463;
-                }                    
+                color: #edc463;
+                font-size: 40px;
+                @media screen and (max-width: 768px){
+                    line-height: 50px;
+                }
+                @media screen and (max-width: 375px){
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }                    
     }
     .menu-desplegado {
         position: fixed;
         width: 100%;
         height: 100%;
         background-color: #141414;
-        z-index: 2;
         background-image: url("../img/fondo-menu.png");
         background-size: cover;
         display: none;
         z-index: 4;
+        top: -300px;
+        opacity: 0;
+        padding-top: 300px;
+        margin-top: -300px;
         .cerrar { 
-            position: absolute;
+            display: block;
             width: 50px;
             height: 50px;
             background-image: url("../img/close.png");
             background-size: cover;
-            margin-left: 92%;
+            margin-left: 94%;
             margin-top: 15px;
+            @media screen and (max-width: 375px){
+                width: 40px;
+                height: 40px;
+                display: block;
+                margin-left: 85%;
+            }
         }
         ul {
-            width: 44%;
-            height: 100%;
+            width: 35%;
+            height: auto;
             left: 0;
             right: 0;
             top: 0;
             bottom: 0;
             margin: auto;
             list-style: none;
-            padding-top: 25px;
+            padding-top: 7%
+            text-align: center;
             @media screen and (max-width: 1024px){
                 width: 90%;
                 }
             @media screen and (max-width: 768px){
                 height: 77%;
-                position: absolute;
-                }
+                }   
             a {
                 text-decoration: none;
-            }
-            li {
-                font-family: 'Italiana', serif;
                 font-size: 30px;
                 color: #fff;
+                font-family: 'Italiana',serif;
                 text-align: center;
-                padding: 10px;
-                line-height: 60px;
+                line-height: 70px;
                 letter-spacing: 3px;
+                @media screen and (max-width: 375px){
+                    line-height: 55px;
+                    letter-spacing: 1px;
+                }
+            }    
+            a:hover {
+                    color: #edc463;
             }
         }
     }  
 	.menu {
-		width: 90%;
+		width: 100%;
   		height: 110px;
-  		border-bottom: 1px solid #FFF;
   		margin: auto;
   		list-style: none;
   		position: fixed;
@@ -100,10 +120,16 @@ body {
         display: flex;
         -webkit-flex-flow: row wrap;
         justify-content: space-around;
-    .fondo-inicio-cel {
-            width: 100%;
-            height: 100%;
-        }       
+        background-color: rgba(0 , 0, 0, 0.8); 
+        @media screen and (max-width: 1024px){
+            height: 16%;
+        }
+        @media screen and (max-width: 768px){
+            height: 12%;
+        }
+        @media screen and (max-width: 375px){
+            height: 90px;
+        }   
   		.menu-icono {
   			width: 45px;
   			height: 45px;
@@ -111,9 +137,12 @@ body {
   			background-size: cover;
   			margin-top: 35px;
             display: block;
+            position: absolute;
+            margin: 35px;
             @media screen and (max-width: 375px){
                 width: 35px;
                 height: 35px;
+                margin: 25px;
             } 
         }	
   		.titulo {
@@ -125,7 +154,7 @@ body {
   			display: block;
   			width: 50%;
             @media screen and (max-width: 375px){
-                width: 85%;
+                width: 40%;
             }                           
   			img {
   				width: 250px;
@@ -162,17 +191,18 @@ body {
   				text-align: center;
   				width: 100%;
   				height: auto;
-  				font-size: 60px;
+  				font-size: 80px;
   				left: 0;
   				right: 0;
   				top: 0;
   				margin: auto;
   				bottom: 0;
-  				margin-bottom: 50px;
+  				margin-bottom: 100px;
                 font-family: "Didot";                    
                 @media screen and (max-width: 375px){
                     font-size: 40px;
                     margin-bottom: 0px;
+                    padding-top: 10px;
                 }                        
 			}
 			.kue-imagen{
@@ -185,7 +215,7 @@ body {
   				bottom: 0;
   				margin: auto;
                 @media screen and (max-width: 768px){
-                    padding-top: 100px;
+                    padding-top: 80px;
                 }
                 @media screen and (max-width: 375px){
                     padding-top: 70px;
@@ -210,6 +240,13 @@ body {
             display: flex;
             -webkit-flex-flow: row wrap;
             justify-content: space-around;
+            @media screen and (max-width: 1024px){
+                width: 90%;
+            }
+            @media screen and (max-width: 375px){
+                width: 100%;
+                height: 60%;
+            }
             .tex-que-es-kuerary {
                 width: 50%;
                 height: 50%;
@@ -220,6 +257,7 @@ body {
                     }
                 @media screen and (max-width: 375px){
                     width: 100%;
+                    height: 40%;
                 }
             }
             .img-que-es-kuerary {
@@ -236,19 +274,25 @@ body {
                 } 
                 @media screen and (max-width: 375px){
                     width: 100%;
-                    height: 100%;
+                    height: 40%;
+                    padding-top: 0px;
                 } 
                 img {
                     width: 600px;
                     height: 400px;
                     display: block;
                     @media screen and (max-width: 1024px){
-                        width: 100%;
+                        width: 80%;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
                     }
                     @media screen and (max-width: 375px){
-                        width: 300px;
-                        height: 200px;
-                        padding-top: 20px;
+                        width: 350px;
+                        height: 270px;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
                     }
                 }
             }
@@ -273,10 +317,14 @@ body {
             -webkit-flex-flow: row wrap;
             justify-content: space-around;
             top: 100px;
+            @media screen and (max-width: 1024px){
+                width 90%;
+            }
             @media screen and (max-width: 768px){
                 top: 170px;
             }
             @media screen and (max-width: 375px){
+                width: 100%;
                 top: 40px;
             }
             .conoce-personas{
@@ -286,24 +334,21 @@ body {
                 top: 0;
                 bottom: 0;
                 margin: auto;
-                @media screen and (max-width: 768px){
+                @media screen and (max-width: 768px) {
                     width: 100%;
                 }
-                @media screen and (max-width: 375px){
-                    padding-top: 40px;
-                }
             }
-            .imagen-iphone{
+            .imagen-iphone {
                 width: 25%;
                 left: 0;
                 right: 0;
                 top: 0;
                 bottom: 0;
                 margin: auto;
-                @media screen and (max-width: 768px){
+                @media screen and (max-width: 768px) {
                     width: 50%;
                 }
-                @media screen and (max-width: 375px){
+                @media screen and (max-width: 375px) {
                     width: 100%;
                 }
                 img {
@@ -314,9 +359,9 @@ body {
                     top: 0;
                     bottom: 0;
                     margin: auto;
-                    @media screen and (max-width: 375px){
-                        width: 65%;
-                        padding-top: 40px;
+                    @media screen and (max-width: 375px) {
+                        width: 45%;
+                        padding-top: 20px;
                     }
                 }
             }
@@ -340,11 +385,15 @@ body {
             display: flex;
             -webkit-flex-flow: row wrap;
             justify-content: space-around;
+            @media screen and (max-width: 1024px){
+                width: 90%;
+            }
             @media screen and (max-width: 768px){
                 top: 170px;
             }
             @media screen and (max-width: 375px){
-                width: 100%; 
+                width: 90%; 
+                height: 60%;
                 top: 0;
             }           
             .reg-forma-segura {
@@ -367,22 +416,22 @@ body {
                 margin: auto;
                 @media screen and (max-width: 768px){
                     width: 50%;
-                    }
+                }
                 @media screen and (max-width: 375px){
                     width: 100%;
-                    } 
+                } 
                 img {
                     width: 250px;
                     display: block;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
                     @media screen and (max-width: 375px){
                         width: 100%;
                         padding-top: 30px;
                         width: 47%;
-                        left: 0;
-                        right: 0;
-                        top: 0;
-                        bottom: 0;
-                        margin: auto;
                     }  
                 }
             }
@@ -405,6 +454,7 @@ body {
             -webkit-flex-flow: row wrap;
             justify-content: space-around
             @media screen and (max-width: 1024px){
+                width: 90%;
                 height: 100%;
             }
             .interactua {
@@ -443,10 +493,10 @@ body {
                     margin: auto;
                     display: block;  
                     @media screen and (max-width: 1024px){   
-                    width: 430px;
+                    width: 400px;
                     }
                     @media screen and (max-width: 375px){
-                        width: 330px;
+                        width: 290px;
                         left: 0;
                         right: 0;
                         top: 0;
@@ -464,7 +514,7 @@ body {
     .aplicacion {
         .cont-6 {
             position: absolute;
-            width: 70%;
+            width: 90%;
             height: 50%;
             left: 0;
             right: 0;
@@ -478,8 +528,13 @@ body {
             display: -webkit-flex;
             display: flex;
             -webkit-flex-flow: row wrap;
-            justify-content: space-around;nd;
+            justify-content: space-around;
             top: 100px;
+            @media screen and (max-width: 375px){
+                width: 100%;
+                height: 60%;
+                top: 0;
+            }
             .desc-app {
                 width: 60%;
                 bottom: 0;
@@ -501,7 +556,7 @@ body {
                 img {
                     width: 240px;
                     @media screen and (max-width: 375px){
-                          width: 65%;
+                        width: 40%;
                         display: block;
                         left: 0;
                         right: 0;
@@ -562,7 +617,7 @@ body {
                     margin: auto;
                     display: block;
                     @media screen and (max-width: 375px){
-                        width: 100%;
+                        width: 90%;
                     }
                 }
             }
@@ -617,24 +672,27 @@ body {
                     width: 90%;
                     height: 10%;
                     padding: 10px;
-                    border-radius: 10px;
                     margin: 10px;
                     font-size: 16px;
+                    border: none;
                 }
                 a {
                     width: 100px;
-                    background-color: #D0D0D0;
                     height: 20px;
-                    border-radius: 10px;
                     text-decoration: none;
-                    color: #000000;
+                    color: #FFFF;
                     text-align: center;
                     font-size: 19px;
                     margin: 15px auto;
                     padding: 9px;
                     display: block;
-                    font-family: "Didot"; 
+                    font-family: sans-serif; 
                     margin-top: 50px;
+                    border: solid 1px;
+                    fon
+                }
+                a:hover {
+                    background-color: rgba(255,255,255,0.2);
                 }
                 #dat-obli{
                     font-family: Didot;

@@ -1,4 +1,4 @@
-ar gulp = require('gulp');
+var gulp = require('gulp');
 var gls = require('gulp-live-server');
 var stylus = require('gulp-stylus');
 var gutil = require('gulp-util');
@@ -11,7 +11,7 @@ gulp.task('watch', function(){
 	gulp.watch('_stylus/**/*.styl', ['compile:css']);
 });
 gulp.task('serve', function(){
-	var server = gls.static('public');
+	var server = gls([gls.script,"public",3001], undefined,12345);
 	server.start();
 	gulp.watch(['public/**/*.js', 'public/**/*.css', 'public/**/*.html'], server.notify);
 });

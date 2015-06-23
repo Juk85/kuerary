@@ -19,7 +19,7 @@ body section {
 }
 body section p {
   font-family: "Didot";
-  font-size: 20px;
+  font-size: 27px;
   color: #fff;
   text-align: left;
   line-height: 30px;
@@ -37,14 +37,24 @@ body section p {
 }
 body section span {
   color: #edc463;
-  font-size: 35px;
+  font-size: 40px;
+}
+@media screen and (max-width: 768px) {
+  body section span {
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 375px) {
+  body section span {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 body .menu-desplegado {
   position: fixed;
   width: 100%;
   height: 100%;
   background-color: #141414;
-  z-index: 2;
   background-image: url("../img/fondo-menu.png");
   background-size: cover;
   display: none;
@@ -55,29 +65,34 @@ body .menu-desplegado {
   margin-top: -300px;
 }
 body .menu-desplegado .cerrar {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background-image: url("../img/ios7-close-empty.png");
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/close.png");
   background-size: cover;
-  margin-left: 92%;
+  margin-left: 94%;
   margin-top: 15px;
 }
+@media screen and (max-width: 375px) {
+  body .menu-desplegado .cerrar {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-left: 85%;
+  }
+}
 body .menu-desplegado ul {
-  width: 44%;
-  height: 100%;
+  width: 35%;
+  height: auto;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  margin: 30px auto;
+  margin: auto;
   list-style: none;
-  padding-top: 25px;
-}
-body .menu-desplegado ul li{
+  padding-top: 7%;
   text-align: center;
-  padding-top: 10px;
-} 
+}
 @media screen and (max-width: 1024px) {
   body .menu-desplegado ul {
     width: 90%;
@@ -86,22 +101,25 @@ body .menu-desplegado ul li{
 @media screen and (max-width: 768px) {
   body .menu-desplegado ul {
     height: 77%;
-    position: absolute;
   }
 }
-body .menu-desplegado ul li a {
-  font-family: 'Italiana', serif;
-  font-size: 20px;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  line-height: 60px;
+body .menu-desplegado ul a {
   text-decoration: none;
+  font-size: 30px;
+  color: #fff;
+  font-family: 'Italiana', serif;
+  text-align: center;
+  line-height: 70px;
   letter-spacing: 3px;
 }
-body .menu-desplegado ul li a:hover{
+@media screen and (max-width: 375px) {
+  body .menu-desplegado ul a {
+    line-height: 55px;
+    letter-spacing: 1px;
+  }
+}
+body .menu-desplegado ul a:hover {
   color: #edc463;
-  opacity: 1;
 }
 body .menu {
   width: 100%;
@@ -110,7 +128,6 @@ body .menu {
   list-style: none;
   position: fixed;
   right: 0;
-  background: rgba(0, 0, 0, 0.8);
   left: 0;
   z-index: 1;
   display: -webkit-box;
@@ -120,24 +137,38 @@ body .menu {
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
+  background-color: rgba(0,0,0,0.8);
 }
-body .menu .fondo-inicio-cel {
-  width: 100%;
-  height: 100%;
+@media screen and (max-width: 1024px) {
+  body .menu {
+    height: 16%;
+  }
+}
+@media screen and (max-width: 768px) {
+  body .menu {
+    height: 12%;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .menu {
+    height: 90px;
+  }
 }
 body .menu .menu-icono {
   width: 45px;
   height: 45px;
   background-image: url("../img/menu.png");
   background-size: cover;
-  margin: 35px;
-  position: absolute;;
+  margin-top: 35px;
   display: block;
+  position: absolute;
+  margin: 35px;
 }
 @media screen and (max-width: 375px) {
   body .menu .menu-icono {
     width: 35px;
     height: 35px;
+    margin: 25px;
   }
 }
 body .menu .titulo {
@@ -151,7 +182,7 @@ body .menu .titulo {
 }
 @media screen and (max-width: 375px) {
   body .menu .titulo {
-    width: 85%;
+    width: 40%;
   }
 }
 body .menu .titulo img {
@@ -193,19 +224,20 @@ body .inicio .cont-1 h1 {
   text-align: center;
   width: 100%;
   height: auto;
-  font-size: 60px;
+  font-size: 80px;
   left: 0;
   right: 0;
   top: 0;
   margin: auto;
   bottom: 0;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   font-family: "Didot";
 }
 @media screen and (max-width: 375px) {
   body .inicio .cont-1 h1 {
     font-size: 40px;
     margin-bottom: 0px;
+    padding-top: 10px;
   }
 }
 body .inicio .cont-1 .kue-imagen {
@@ -220,7 +252,7 @@ body .inicio .cont-1 .kue-imagen {
 }
 @media screen and (max-width: 768px) {
   body .inicio .cont-1 .kue-imagen {
-    padding-top: 100px;
+    padding-top: 80px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -245,6 +277,17 @@ body .quienes-somos .cont-2 {
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
 }
+@media screen and (max-width: 1024px) {
+  body .quienes-somos .cont-2 {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .quienes-somos .cont-2 {
+    width: 100%;
+    height: 60%;
+  }
+}
 body .quienes-somos .cont-2 .tex-que-es-kuerary {
   width: 50%;
   height: 50%;
@@ -259,6 +302,7 @@ body .quienes-somos .cont-2 .tex-que-es-kuerary {
 @media screen and (max-width: 375px) {
   body .quienes-somos .cont-2 .tex-que-es-kuerary {
     width: 100%;
+    height: 40%;
   }
 }
 body .quienes-somos .cont-2 .img-que-es-kuerary {
@@ -279,7 +323,8 @@ body .quienes-somos .cont-2 .img-que-es-kuerary {
 @media screen and (max-width: 375px) {
   body .quienes-somos .cont-2 .img-que-es-kuerary {
     width: 100%;
-    height: 100%;
+    height: 40%;
+    padding-top: 0px;
   }
 }
 body .quienes-somos .cont-2 .img-que-es-kuerary img {
@@ -289,14 +334,19 @@ body .quienes-somos .cont-2 .img-que-es-kuerary img {
 }
 @media screen and (max-width: 1024px) {
   body .quienes-somos .cont-2 .img-que-es-kuerary img {
-    width: 100%;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 }
 @media screen and (max-width: 375px) {
   body .quienes-somos .cont-2 .img-que-es-kuerary img {
-    width: 300px;
-    height: 200px;
-    padding-top: 20px;
+    width: 350px;
+    height: 270px;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 }
 body .descripcion .cont-3 {
@@ -318,6 +368,11 @@ body .descripcion .cont-3 {
   justify-content: space-around;
   top: 100px;
 }
+@media screen and (max-width: 1024px) {
+  body .descripcion .cont-3 {
+    width: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   body .descripcion .cont-3 {
     top: 170px;
@@ -325,6 +380,7 @@ body .descripcion .cont-3 {
 }
 @media screen and (max-width: 375px) {
   body .descripcion .cont-3 {
+    width: 100%;
     top: 40px;
   }
 }
@@ -339,11 +395,6 @@ body .descripcion .cont-3 .conoce-personas {
 @media screen and (max-width: 768px) {
   body .descripcion .cont-3 .conoce-personas {
     width: 100%;
-  }
-}
-@media screen and (max-width: 375px) {
-  body .descripcion .cont-3 .conoce-personas {
-    padding-top: 40px;
   }
 }
 body .descripcion .cont-3 .imagen-iphone {
@@ -375,8 +426,8 @@ body .descripcion .cont-3 .imagen-iphone img {
 }
 @media screen and (max-width: 375px) {
   body .descripcion .cont-3 .imagen-iphone img {
-    width: 65%;
-    padding-top: 40px;
+    width: 45%;
+    padding-top: 20px;
   }
 }
 body .confidencial .cont-4 {
@@ -397,6 +448,11 @@ body .confidencial .cont-4 {
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
 }
+@media screen and (max-width: 1024px) {
+  body .confidencial .cont-4 {
+    width: 90%;
+  }
+}
 @media screen and (max-width: 768px) {
   body .confidencial .cont-4 {
     top: 170px;
@@ -404,7 +460,8 @@ body .confidencial .cont-4 {
 }
 @media screen and (max-width: 375px) {
   body .confidencial .cont-4 {
-    width: 100%;
+    width: 90%;
+    height: 60%;
     top: 0;
   }
 }
@@ -442,17 +499,17 @@ body .confidencial .cont-4 .img-reg-conf {
 body .confidencial .cont-4 .img-reg-conf img {
   width: 250px;
   display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 @media screen and (max-width: 375px) {
   body .confidencial .cont-4 .img-reg-conf img {
     width: 100%;
     padding-top: 30px;
     width: 47%;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
   }
 }
 body .eventos {
@@ -478,6 +535,7 @@ body .eventos .cont-5 {
 }
 @media screen and (max-width: 1024px) {
   body .eventos .cont-5 {
+    width: 90%;
     height: 100%;
   }
 }
@@ -528,12 +586,12 @@ body .eventos .cont-5 .img-interactua img {
 }
 @media screen and (max-width: 1024px) {
   body .eventos .cont-5 .img-interactua img {
-    width: 430px;
+    width: 400px;
   }
 }
 @media screen and (max-width: 375px) {
   body .eventos .cont-5 .img-interactua img {
-    width: 330px;
+    width: 290px;
     left: 0;
     right: 0;
     top: 0;
@@ -544,7 +602,7 @@ body .eventos .cont-5 .img-interactua img {
 }
 body .aplicacion .cont-6 {
   position: absolute;
-  width: 70%;
+  width: 90%;
   height: 50%;
   left: 0;
   right: 0;
@@ -559,8 +617,14 @@ body .aplicacion .cont-6 {
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
-nd
   top: 100px;
+}
+@media screen and (max-width: 375px) {
+  body .aplicacion .cont-6 {
+    width: 100%;
+    height: 60%;
+    top: 0;
+  }
 }
 body .aplicacion .cont-6 .desc-app {
   width: 60%;
@@ -590,7 +654,7 @@ body .aplicacion .cont-6 .img-app img {
 }
 @media screen and (max-width: 375px) {
   body .aplicacion .cont-6 .img-app img {
-    width: 65%;
+    width: 40%;
     display: block;
     left: 0;
     right: 0;
@@ -657,13 +721,12 @@ body .preg-fre .cont-7 .img-preg img {
 }
 @media screen and (max-width: 375px) {
   body .preg-fre .cont-7 .img-preg img {
-    width: 100%;
+    width: 90%;
   }
 }
 body .contacto {
-  background: #000 url("../img/fondo-registro.png") fixed;
+  background-image: url("../img/fondo-registro.png");
   background-size: cover;
-  box-shadow: inset 0 1px 10px rgba(0,0,0,0.5),inset 0 -1px 10px rgba(0,0,0,0.5);
 }
 body .contacto .cont-8 {
   position: absolute;
@@ -721,28 +784,25 @@ body .contacto .cont-8 .formulario input {
   padding: 10px;
   margin: 10px;
   font-size: 16px;
-  font-family: sans-serif;
-  font-weight: 100;
   border: none;
 }
 body .contacto .cont-8 .formulario a {
   width: 100px;
-  background-color: none;
   height: 20px;
   text-decoration: none;
   color: #fff;
   text-align: center;
   font-size: 19px;
   margin: 15px auto;
-  border: 1px solid;
   padding: 9px;
   display: block;
   font-family: sans-serif;
-  font-weight: 100;
   margin-top: 50px;
+  border: solid 1px;
+fon
 }
-body .contacto .cont-8 .formulario a:hover{
-  background: rgba(255, 255, 255, 0.3);
+body .contacto .cont-8 .formulario a:hover {
+  background-color: rgba(255,255,255,0.2);
 }
 body .contacto .cont-8 .formulario #dat-obli {
   font-family: Didot;
