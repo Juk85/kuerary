@@ -1,4 +1,9 @@
 @font-face{
 	font-family: "Didot";
-	src:url(../fonts/Didot.ttc);
+	src: url(../fonts/Didot/didot.woff);
+	src: url(../fonts/Didot/didot.otf);
+	src: url(../fonts/Didot/Didot.ttc);
+	src: url(../fonts/Didot/Didot.eot);
+	src: url(../fonts/Didot/Didot.svg);
+	src: url(../fonts/Didot/Didot.ttf);
 }

@@ -10,6 +10,7 @@ body {
 	width: 100%;
   	height: 100%;
     font-family: "Didot"; 
+    background-color: #000000;
     section {
         width: 100%;
         height: 100%;
@@ -17,7 +18,7 @@ body {
         position: relative;
             p {
                 font-family: "Didot";
-                font-size: 27px;
+                font-size: 23px;
                 color: #FFF;    
                 text-align: left;
                 line-height: 30px;
@@ -62,6 +63,9 @@ body {
             background-size: cover;
             margin-left: 94%;
             margin-top: 15px;
+            @media screen and (max-width: 768px){
+                margin-left: 90%;
+            }
             @media screen and (max-width: 375px){
                 width: 40px;
                 height: 40px;
@@ -78,14 +82,17 @@ body {
             bottom: 0;
             margin: auto;
             list-style: none;
-            padding-top: 7%
             text-align: center;
             @media screen and (max-width: 1024px){
                 width: 90%;
                 }
             @media screen and (max-width: 768px){
                 height: 77%;
-                }   
+                padding-top: 100px;
+                }
+            @media screen and (max-width: 375px){
+                padding-top: 0;
+            }   
             a {
                 text-decoration: none;
                 font-size: 30px;
@@ -122,7 +129,7 @@ body {
         justify-content: space-around;
         background-color: rgba(0 , 0, 0, 0.8); 
         @media screen and (max-width: 1024px){
-            height: 16%;
+            height: 19%;
         }
         @media screen and (max-width: 768px){
             height: 12%;
@@ -178,7 +185,7 @@ body {
 		.cont-1 { 
             position: absolute;
             width: 80%;
-            height: 40%;
+            height: 30%;
             left: 0;
             right: 0;
             top: 0;
@@ -186,12 +193,15 @@ body {
             margin: auto;
             display: flex;
             -webkit-flex-flow: row wrap;
-            justify-content: space-around;           
+            justify-content: space-around;
+            @media screen and (max-width: 768px){
+                width: 100%;
+            }       
 			h1 {
   				text-align: center;
   				width: 100%;
   				height: auto;
-  				font-size: 80px;
+  				font-size: 66px;
   				left: 0;
   				right: 0;
   				top: 0;
@@ -200,14 +210,14 @@ body {
   				margin-bottom: 100px;
                 font-family: "Didot";                    
                 @media screen and (max-width: 375px){
+                    padding-top: 10px;
                     font-size: 40px;
                     margin-bottom: 0px;
-                    padding-top: 10px;
                 }                        
 			}
 			.kue-imagen{
   				display: block;
-  				width: 500px;
+  				width: 400px;
   				height: auto;
   				left: 0;
   				right: 0;
@@ -218,7 +228,8 @@ body {
                     padding-top: 80px;
                 }
                 @media screen and (max-width: 375px){
-                    padding-top: 70px;
+                    width: 80%;
+                    padding-top: 40px;
                 }          
 			}
 		}	
@@ -226,7 +237,7 @@ body {
 	.quienes-somos {
         .cont-2 {
             position: absolute;
-            width: 80%;
+            width: 90%;
             height: 48%;
             left: 0;
             right: 0;
@@ -243,6 +254,9 @@ body {
             @media screen and (max-width: 1024px){
                 width: 90%;
             }
+            @media screen and (max-width: 768px){
+                height: 60%;
+            }
             @media screen and (max-width: 375px){
                 width: 100%;
                 height: 60%;
@@ -250,7 +264,7 @@ body {
             .tex-que-es-kuerary {
                 width: 50%;
                 height: 50%;
-                padding-top: 3%;
+                padding-top: 8%;
                 @media screen and (max-width: 768px){
                     width: 100%
                     padding-top: 0;
@@ -267,10 +281,11 @@ body {
                 right: 0;
                 top: 0;
                 bottom: 0;
-                margin: auto; 
+                margin: auto;
+                padding-top: 3%;
                 @media screen and (max-width: 768px){
-                        width: 100%;
-                        padding-top: 70px;
+                    width: 100%;
+                    padding-top: 20px;
                 } 
                 @media screen and (max-width: 375px){
                     width: 100%;
@@ -281,11 +296,17 @@ body {
                     width: 600px;
                     height: 400px;
                     display: block;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
                     @media screen and (max-width: 1024px){
-                        width: 80%;
+                        width: 100%;
                         left: 0;
                         right: 0;
                         margin: auto;
+                    }
+                    @media screen and (max-width 768px){
+                        width: 80%;
                     }
                     @media screen and (max-width: 375px){
                         width: 350px;
@@ -301,7 +322,7 @@ body {
     .descripcion {
         .cont-3 {
             position: absolute;
-            width: 70%;
+            width: 90%;
             height: 70%;
             left: 0;
             right: 0;
@@ -321,7 +342,7 @@ body {
                 width 90%;
             }
             @media screen and (max-width: 768px){
-                top: 170px;
+                top: 130px;
             }
             @media screen and (max-width: 375px){
                 width: 100%;
@@ -359,9 +380,13 @@ body {
                     top: 0;
                     bottom: 0;
                     margin: auto;
+                    @media screen and (max-width: 768px){
+                        padding-top: 40px;
+                    }
                     @media screen and (max-width: 375px) {
-                        width: 45%;
+                        width: 40%;
                         padding-top: 20px;
+                        
                     }
                 }
             }
@@ -370,8 +395,8 @@ body {
     .confidencial {
         .cont-4 {
             position: absolute;
-            width: 70%;
-            height: 50%;
+            width: 90%;
+            height: 60%;
             left: 0;
             right: 0;
             top: 0;
@@ -389,7 +414,8 @@ body {
                 width: 90%;
             }
             @media screen and (max-width: 768px){
-                top: 170px;
+                height: 80%;
+                top: 80px;
             }
             @media screen and (max-width: 375px){
                 width: 90%; 
@@ -431,7 +457,7 @@ body {
                     @media screen and (max-width: 375px){
                         width: 100%;
                         padding-top: 30px;
-                        width: 47%;
+                        width: 45%;
                     }  
                 }
             }
@@ -440,8 +466,8 @@ body {
     .eventos {
         .cont-5 {
             position: absolute;
-            width: 80%;
-            height: 70%;
+            width: 90%;
+            height: 100%;
             left: 0;
             right: 0;
             bottom: 0;
@@ -455,7 +481,7 @@ body {
             justify-content: space-around
             @media screen and (max-width: 1024px){
                 width: 90%;
-                height: 100%;
+                height: 90%;
             }
             .interactua {
                 width: 60%;
@@ -468,7 +494,7 @@ body {
                     width: 100%;
                 }
                 @media screen and (max-width: 375px){
-                    padding-top: 100px;
+                    padding-top: 40px;
                 }
             }
             .img-interactua {
@@ -515,7 +541,7 @@ body {
         .cont-6 {
             position: absolute;
             width: 90%;
-            height: 50%;
+            height: 70%;
             left: 0;
             right: 0;
             top: 0;
@@ -530,6 +556,9 @@ body {
             -webkit-flex-flow: row wrap;
             justify-content: space-around;
             top: 100px;
+            @media screen and (max-width 768px){
+                height: 80%;
+            }
             @media screen and (max-width: 375px){
                 width: 100%;
                 height: 60%;
@@ -550,13 +579,23 @@ body {
                 top: 0;
                 bottom: 0;
                 margin: auto;
+                @media screen and (max-width: 768px){
+                    width: 100%
+                }
                 @media screen and (max-width: 375px){
                     width: 100%;
                 }
                 img {
                     width: 240px;
+                    @media screen and (max-width: 768px){
+                        width: 240px;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        display: block;
+                    }
                     @media screen and (max-width: 375px){
-                        width: 40%;
+                        width: 36%;
                         display: block;
                         left: 0;
                         right: 0;
@@ -572,7 +611,7 @@ body {
     .preg-fre {
         .cont-7 {
             position: absolute;
-            width: 80%;
+            width: 90%;
             height: 50%;
             left: 0;
             right: 0;
@@ -617,7 +656,7 @@ body {
                     margin: auto;
                     display: block;
                     @media screen and (max-width: 375px){
-                        width: 90%;
+                        width: 80%;
                     }
                 }
             }
@@ -635,7 +674,7 @@ body {
             top: 0px;
             bottom: 0;
             margin: auto;
-             margin: auto;
+            padding-top: 10%;
             display: -webkit-box;
             display: -moz-box;
             display: -ms-flexbox;
@@ -643,6 +682,12 @@ body {
             display: flex;
             -webkit-flex-flow: row wrap;
             justify-content: space-around;
+            @media screen and (max-width: 1024px){
+                padding-top: 30px;
+            }
+            @media screen and (max-width: 768px){
+                width 80%;
+            }
             @media screen and (max-width: 375px){
                 width: 80%;
             }
@@ -670,11 +715,14 @@ body {
                 }    
                 input {
                     width: 90%;
-                    height: 10%;
-                    padding: 10px;
+                    height: 20%;
+                    padding: 15px;
                     margin: 10px;
                     font-size: 16px;
                     border: none;
+                    .rojo {
+                        -webkit-input-placeholder: red;
+                    }
                 }
                 a {
                     width: 100px;
@@ -698,7 +746,7 @@ body {
                     font-family: Didot;
                     text-align: center;
                     font-size 24px;
-                    display: none;  
+                    display: none;
                 } 
             }
         }    
