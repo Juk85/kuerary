@@ -32,6 +32,7 @@ body section p {
 }
 @media screen and (max-width: 375px) {
   body section p {
+    font-family: 'Playfair Display', serif;
     font-size: 15px;
     line-height: 20px;
   }
@@ -47,6 +48,7 @@ body section span {
 }
 @media screen and (max-width: 375px) {
   body section span {
+    font-family: 'Playfair Display', serif;
     font-size: 20px;
     line-height: 30px;
   }
@@ -251,6 +253,7 @@ body .inicio .cont-1 h1 {
 }
 @media screen and (max-width: 375px) {
   body .inicio .cont-1 h1 {
+    font-family: 'Playfair Display', serif;
     padding-top: 10px;
     font-size: 40px;
     margin-bottom: 0px;
@@ -351,7 +354,7 @@ body .quienes-somos .cont-2 .img-que-es-kuerary {
   }
 }
 body .quienes-somos .cont-2 .img-que-es-kuerary img {
-  width: 600px;
+  width: 550px;
   height: 400px;
   display: block;
   left: 0;
@@ -852,12 +855,21 @@ body .contacto .cont-8 .formulario input {
   font-size: 16px;
   border: none;
 }
-body .contacto .cont-8 .formulario input .rojo {
-  -webkit-input-placeholder: #f00;
+body .contacto .cont-8 .formulario #form-name::-webkit-input-placeholder {
+  color: #919189;
 }
-body .contacto .cont-8 .formulario a {
+body .contacto .cont-8 .formulario #form-name.rojo::-webkit-input-placeholder {
+  color: #a8262a;
+}
+body .contacto .cont-8 .formulario #form-mail::-webkit-input-placeholder {
+  color: #919189;
+}
+body .contacto .cont-8 .formulario #form-mail.rojo::-webkit-input-placeholder {
+  color: #a8262a;
+}
+body .contacto .cont-8 .formulario .send {
   width: 100px;
-  height: 20px;
+  height: 40px;
   text-decoration: none;
   color: #fff;
   text-align: center;
@@ -870,7 +882,7 @@ body .contacto .cont-8 .formulario a {
   border: solid 1px;
 fon
 }
-body .contacto .cont-8 .formulario a:hover {
+body .contacto .cont-8 .formulario .send:hover {
   background-color: rgba(255,255,255,0.2);
 }
 body .contacto .cont-8 .formulario #dat-obli {
@@ -878,4 +890,10 @@ body .contacto .cont-8 .formulario #dat-obli {
   text-align: center;
   font-size: 24px;
   display: none;
+}
+@media screen and (max-width: 375px) {
+  body .contacto .cont-8 .formulario #dat-obli {
+    font-size: 15px;
+    padding-top: 10px;
+  }
 }

@@ -26,6 +26,7 @@ body {
                     text-align: center;
                 }
                 @media screen and (max-width: 375px){
+                    font-family: 'Playfair Display', serif;
                     font-size: 15px;
                     line-height: 20px;        
                 }      
@@ -37,6 +38,7 @@ body {
                     line-height: 50px;
                 }
                 @media screen and (max-width: 375px){
+                    font-family: 'Playfair Display', serif;
                     font-size: 20px;
                     line-height: 30px;
                 }
@@ -210,6 +212,7 @@ body {
   				margin-bottom: 100px;
                 font-family: "Didot";                    
                 @media screen and (max-width: 375px){
+                    font-family: 'Playfair Display', serif;
                     padding-top: 10px;
                     font-size: 40px;
                     margin-bottom: 0px;
@@ -293,7 +296,7 @@ body {
                     padding-top: 0px;
                 } 
                 img {
-                    width: 600px;
+                    width: 550px;
                     height: 400px;
                     display: block;
                     left: 0;
@@ -712,7 +715,7 @@ body {
                     font-size: 30px;
                     text-align: center;
                     }
-                }    
+                }     
                 input {
                     width: 90%;
                     height: 20%;
@@ -720,13 +723,26 @@ body {
                     margin: 10px;
                     font-size: 16px;
                     border: none;
-                    .rojo {
-                        -webkit-input-placeholder: red;
+                }
+                #form-name{
+                    &::-webkit-input-placeholder {
+                        color: #919189;
+                    }
+                    &.rojo::-webkit-input-placeholder {
+                        color: #A8262A;
                     }
                 }
-                a {
+                #form-mail {
+                    &::-webkit-input-placeholder {
+                        color: #919189;
+                    }
+                    &.rojo::-webkit-input-placeholder {
+                        color: #A8262A;
+                    }
+                }  
+                .send {
                     width: 100px;
-                    height: 20px;
+                    height: 40px;
                     text-decoration: none;
                     color: #FFFF;
                     text-align: center;
@@ -739,14 +755,18 @@ body {
                     border: solid 1px;
                     fon
                 }
-                a:hover {
+                .send:hover {
                     background-color: rgba(255,255,255,0.2);
                 }
-                #dat-obli{
+                #dat-obli {
                     font-family: Didot;
                     text-align: center;
                     font-size 24px;
                     display: none;
+                    @media screen and (max-width: 375px){
+                        font-size: 15px;
+                        padding-top: 10px;
+                    }
                 } 
             }
         }    

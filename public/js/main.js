@@ -16,27 +16,23 @@ $(document).on("ready",
 				$(".menu-desplegado").css({display: "none"});		
 			}});
 		});
-		$('#contact').on('click', function(e){
-			e.preventDefault ();
-			var top = $('.contacto').offset().top;
-			TweenLite.to(window, 2, {scrollTo:{y: top}, ease:Power2.easeOut});
-		});
-		$('#form').submit(function(event) {
-		var $form	= $(this);
-		var name 	= $("#form-name").val();
-		var mail 	= $form.find("#form-mail").val();
-		var nameIsString	= /[A-Za-z\ ]+/.test(name);
-		var emailIsValid	= /^([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}$/igm.test(email);
 
-		if(!name || !nameIsString){
+		$('#form').on("submit", function(event) {
+			event.preventDefault ();
+		var name = $("#form-name").val();
+		var mail = $("#form-mail").val();
+		var nameIsString = /[A-Za-z\ ]+/.test(name);
+		var mailIsValid = /^([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}$/igm.test(mail);
+
+		if (!name || !nameIsString){
 			$("#form-name").addClass("rojo");
-			$("form-name").val("");
+			$("#form-name").val("");
 			$("#dat-obli").css({display: "block"});
-			return false;
-		}else{
+		}
+		else {
 			$("#dat-obli").css({display: "none"});
 		}
-		if(!email|| !emailIsValid){
+		if (!mail || !mailIsValid){
 			$("#form-mail").addClass("rojo");
 			$("#form-mail").val("");
 			$(".incorrecto").css({display: "block"});
@@ -44,14 +40,11 @@ $(document).on("ready",
 			$(".correcto").css({display: "none"});
 			$("#dat-obli").css({display: "block"});
 			return false;
-		}else{
+		}else {
 			$(".correcto").css({display: "block"});
 			$(".vacio").css({display: "none"});
 			$(".incorrecto").css({display: "none"});
 			$("#dat-obli").css({display: "none"});
-		}
-
-		$form.find('#boton-enviar').prop('disabled', true);
-		return false;
+		}	
 	});
 });
